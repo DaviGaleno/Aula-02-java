@@ -1,4 +1,5 @@
 public class Cliente {
+
     String nome;
     String rg;
     String num;
@@ -6,6 +7,8 @@ public class Cliente {
     Double peso, alt;
     Double IMC;
 
-public ();
+    public void calc(){
+        IMC = (peso / (alt*alt));
 
+    }
 }
