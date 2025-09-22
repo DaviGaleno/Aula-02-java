@@ -9,35 +9,35 @@ public class Main {
             Cliente c = new Cliente();
 
             System.out.print("Digite o nome do cliente: ");
-            c.nome = sc.next();
+            c.setNome(sc.next());
 
             System.out.print("Digite o RG do cliente: ");
-            c.rg = sc.next();
+            c.setRg(sc.next());
 
             System.out.print("Digite o número do cliente: ");
-            c.num = sc.next();
+            c.setNum(sc.next());
 
             System.out.print("Digite o endereço do cliente: ");
-            c.end = sc.next();
+            c.setEnd(sc.next());
 
             System.out.print("Digite o peso do cliente: ");
-            c.peso = sc.nextDouble();
+            c.setPeso(sc.nextDouble());
 
             System.out.print("Digite a altura do cliente: ");
-            c.alt = sc.nextDouble();
+            c.setAlt(sc.nextDouble());;
 
-            System.out.println(c.nome);
-            System.out.println(c.rg);
-            System.out.println(c.num);
-            System.out.println(c.end);
+            System.out.println(c.getNome());
+            System.out.println(c.getRg());
+            System.out.println(c.getNum());
+            System.out.println(c.getEnd());
 
             c.calc();
 
-            if (c.IMC < 10.5) {
+            if (c.getIMC() < 10.5) {
                 System.out.println("Você está abaixo do peso!");
-            } else if (c.IMC >= 10.5 && c.IMC < 25.0) {
+            } else if (c.getIMC() >= 10.5 && c.getIMC() < 25.0) {
                 System.out.println("Você está com o peso normal.");
-            } else if (c.IMC >= 25.0 && c.IMC < 30.0) {
+            } else if (c.getIMC() >= 25.0 && c.getIMC() < 30.0) {
                 System.out.println("Você está com sobrepeso.");
             } else {
                 System.out.println("Você está obeso.");
